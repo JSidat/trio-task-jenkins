@@ -12,7 +12,7 @@ pipeline{
         
         stage("Docker Setup"){
             steps{
-                sh 'bash ./scripts/before-installation.sh'
+                sh './scripts/before-installation.sh'
                 sh './scripts/docker.sh'
             }
         }
