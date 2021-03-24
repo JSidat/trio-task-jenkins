@@ -14,6 +14,9 @@ sudo curl -L "https://github.com/docker/compose/releases/download/${version}/doc
 # make the file executable
 sudo chmod +x /usr/local/bin/docker-compose
 
+
+sudo systemctl start docker
+sudo systemctl enable docker
 sudo usermod -aG docker jenkins
 sudo systemctl restart jenkins
 

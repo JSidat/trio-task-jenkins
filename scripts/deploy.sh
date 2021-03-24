@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo docker system prune
+sudo docker rmi $(docker images -aq)
 
 docker-compose up -d
 
