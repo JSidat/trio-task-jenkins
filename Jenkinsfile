@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment {
-        DOCKER_HUB_LOGIN=${DOCKER_HUB_LOGIN}
+        DOCKER_HUB_LOGIN="${DOCKER_HUB_LOGIN}"
     }
     stages{
         stage("Make scripts executable"){
