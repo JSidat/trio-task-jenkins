@@ -17,6 +17,6 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo usermod -aG docker jenkins
 sudo systemctl restart jenkins
 
-echo $DOCKER_HUB_LOGIN | docker login --username junaidsidat95 --password-stdin
+
 
 
