@@ -13,7 +13,7 @@ pipeline{
         stage("Docker Setup"){
             steps{
                 sh './scripts/before-installation.sh'
-                sh './scripts/docker.sh'
+                sh './scripts/ansible.sh'
             }
         }
         stage("Deploy"){
